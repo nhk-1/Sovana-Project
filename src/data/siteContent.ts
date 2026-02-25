@@ -107,7 +107,70 @@ export const services: ServiceItem[] = [
 
 export const pricing = {
   hourlyRates: ['Intervention à domicile : 65€/h', 'Assistance à distance : 55€/h', 'Diagnostic : 35€'],
+<<<<<<< codex/develop-local-seo-strategy-for-sovana-website-2coo3n
+  travelFees: ['Déplacement gratuit jusqu’à 20 km autour de Beauvais', 'Au-delà : 0,70€/km'],
+};
+
+
+export type PricingPackItem = {
+  name: string;
+  price: string;
+  summary: string;
+  idealIf: string[];
+  includes: string[];
+  objective: string;
+};
+
+export const pricingPacks: PricingPackItem[] = [
+  {
+    name: 'Pack PC Sérénité',
+    price: '149 €',
+    summary: 'Pour un ordinateur plus rapide, plus propre et sécurisé.',
+    idealIf: ['Votre ordinateur est lent', 'Vous avez peur des virus', 'Vous voulez repartir sur une base saine'],
+    includes: [
+      'Diagnostic complet du système',
+      'Nettoyage et optimisation',
+      'Suppression des menaces éventuelles',
+      'Vérification sécurité',
+      'Conseils personnalisés',
+      '30 minutes d’explication claire',
+    ],
+    objective: 'Retrouver un ordinateur performant et sécurisé, sans stress.',
+  },
+  {
+    name: 'Pack Installation Complète',
+    price: '189 €',
+    summary: 'Vous venez d’acheter un nouvel ordinateur ? Nous nous occupons de tout.',
+    idealIf: [],
+    includes: [
+      'Mise en service complète',
+      'Transfert de vos données',
+      'Installation des logiciels essentiels',
+      'Configuration email et imprimante',
+      'Paramétrage des mises à jour',
+      '1 heure d’accompagnement personnalisé',
+    ],
+    objective: 'Un ordinateur prêt à l’emploi, parfaitement configuré.',
+  },
+  {
+    name: 'Pack Sécurité & Sauvegarde',
+    price: '169 €',
+    summary: 'Pour protéger durablement vos données.',
+    idealIf: [],
+    includes: [
+      'Installation antivirus fiable',
+      'Nettoyage des menaces',
+      'Mise en place d’une sauvegarde automatique',
+      'Paramétrage cloud sécurisé',
+      'Explication du fonctionnement',
+    ],
+    objective: 'Protéger vos informations personnelles et éviter les mauvaises surprises.',
+  },
+];
+
+=======
   travelFees: ['Déplacement gratuit jusqu’à 15 km autour de Beauvais', 'Au-delà : 0,70€/km'],
 };
 
+>>>>>>> main
 export const localAreas = ['Beauvais', 'Allonne', 'Tillé', 'Saint-Paul', 'Clermont (Oise)', 'Autres communes de l’Oise'];
