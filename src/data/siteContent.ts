@@ -107,6 +107,7 @@ export const services: ServiceItem[] = [
 
 export const pricing = {
   hourlyRates: ['Intervention à domicile : 65€/h', 'Assistance à distance : 55€/h', 'Diagnostic : 35€'],
+<<<<<<< codex/develop-local-seo-strategy-for-sovana-website-2coo3n
   travelFees: ['Déplacement gratuit jusqu’à 20 km autour de Beauvais', 'Au-delà : 0,70€/km'],
 };
 
@@ -167,4 +168,9 @@ export const pricingPacks: PricingPackItem[] = [
   },
 ];
 
+=======
+  travelFees: ['Déplacement gratuit jusqu’à 15 km autour de Beauvais', 'Au-delà : 0,70€/km'],
+};
+
+>>>>>>> main
 export const localAreas = ['Beauvais', 'Allonne', 'Tillé', 'Saint-Paul', 'Clermont (Oise)', 'Autres communes de l’Oise'];
