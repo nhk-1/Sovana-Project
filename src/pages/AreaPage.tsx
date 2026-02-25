@@ -15,8 +15,12 @@ export function AreaPage() {
         subtitle="Notre proximité locale permet des interventions rapides, à domicile ou à distance."
       />
       <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {localAreas.map((area) => (
-          <li key={area} className="rounded-xl border border-primary/10 px-4 py-4 text-primary shadow-soft">
+        {localAreas.map((area, index) => (
+          <li
+            key={area}
+            className="animate-fade-up rounded-xl border border-blue-100 bg-white px-4 py-4 text-blue-900 shadow-soft"
+            style={{ animationDelay: `${index * 70}ms` }}
+          >
             {area}
           </li>
         ))}

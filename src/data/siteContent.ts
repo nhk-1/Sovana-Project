@@ -6,22 +6,102 @@ export const navigation = [
   { label: 'Contact', path: '/contact' },
 ];
 
-export const services = [
-  {
-    title: 'Dépannage informatique à domicile à Beauvais',
-    description: 'Résolution rapide de pannes PC et Mac, avec explications claires à chaque étape.',
-  },
-  {
-    title: 'Suppression de virus et sécurisation',
-    description: 'Nettoyage des menaces, renforcement de la sécurité et conseils de prévention personnalisés.',
-  },
-  {
-    title: 'Installation et configuration WiFi',
-    description: 'Optimisation de votre réseau pour un internet stable et performant à la maison.',
-  },
+export type ServiceItem = {
+  title: string;
+  description: string;
+  objective: string;
+  illustration: string;
+  includes: string[];
+};
+
+export const services: ServiceItem[] = [
   {
     title: 'Assistance informatique à distance',
-    description: 'Support rapide sans déplacement pour résoudre les blocages du quotidien.',
+    description: 'Intervention rapide sans déplacement, idéale pour les problèmes courants.',
+    objective: 'Rapidité, efficacité, rentabilité.',
+    illustration: '🖥️',
+    includes: [
+      'Ordinateur lent',
+      'Problèmes logiciels',
+      'Configuration messagerie (Outlook, Gmail, etc.)',
+      'Suppression virus et logiciels indésirables',
+      'Nettoyage et optimisation système',
+      'Paramétrage imprimante',
+      'Mise à jour système',
+      'Aide ponctuelle à l’utilisation',
+    ],
+  },
+  {
+    title: 'Intervention informatique à domicile',
+    description: 'Déplacement dans un rayon de 20 km autour de Beauvais.',
+    objective: 'Proximité et confiance.',
+    illustration: '🏠',
+    includes: [
+      'Installation box internet / WiFi',
+      'Problèmes réseau domestique',
+      'Mise en service ordinateur neuf',
+      'Installation imprimante',
+      'Diagnostic complet système',
+      'Dépannage matériel',
+      'Optimisation performances',
+      'Assistance personnalisée',
+    ],
+  },
+  {
+    title: 'Installation & mise en service complète',
+    description: 'Accompagnement clé en main lors de l’achat d’un nouvel équipement.',
+    objective: 'Simplicité et sérénité.',
+    illustration: '⚙️',
+    includes: [
+      'Installation PC fixe ou portable',
+      'Transfert de données',
+      'Installation logiciels essentiels',
+      'Configuration messagerie',
+      'Paramétrage imprimante',
+      'Synchronisation smartphone / ordinateur',
+      'Mise en place sauvegardes',
+    ],
+  },
+  {
+    title: 'Sécurité & protection des données',
+    description: 'Protection des appareils et des informations personnelles.',
+    objective: 'Tranquillité et prévention.',
+    illustration: '🔒',
+    includes: [
+      'Installation antivirus',
+      'Nettoyage virus / malwares',
+      'Paramétrage pare-feu',
+      'Mise en place sauvegarde automatique',
+      'Configuration cloud sécurisé',
+      'Conseils en cybersécurité domestique',
+    ],
+  },
+  {
+    title: 'Accompagnement & formation personnalisée',
+    description: 'Approche pédagogique adaptée aux seniors et débutants.',
+    objective: 'Autonomie et compréhension.',
+    illustration: '🎓',
+    includes: [
+      'Initiation à l’utilisation d’un ordinateur',
+      'Comprendre internet et les emails',
+      'Sécurité en ligne',
+      'Utilisation smartphone / tablette',
+      'Formation personnalisée à domicile',
+    ],
+  },
+  {
+    title: 'Services pour indépendants et petites structures',
+    description: 'Accompagnement ponctuel ou installation.',
+    objective: 'Fiabilité et efficacité.',
+    illustration: '💼',
+    includes: [
+      'Installation poste de travail',
+      'Configuration réseau basique',
+      'Sécurisation poste',
+      'Optimisation système',
+      'Assistance ponctuelle',
+      'Conseils d’achat matériel',
+    ],
   },
 ];
 

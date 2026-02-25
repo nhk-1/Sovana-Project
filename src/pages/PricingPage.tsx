@@ -1,6 +1,7 @@
 import { PricingBox } from '../components/PricingBox';
+import { PricingPackCard } from '../components/PricingPackCard';
 import { SectionTitle } from '../components/SectionTitle';
-import { pricing } from '../data/siteContent';
+import { pricing, pricingPacks } from '../data/siteContent';
 import { SeoHead } from '../seo/SeoHead';
 
 export function PricingPage() {
@@ -13,11 +14,32 @@ export function PricingPage() {
       />
       <SectionTitle
         title="Tarifs de dépannage informatique à Beauvais"
-        subtitle="Une grille de prix lisible pour vous permettre de décider sereinement."
+        subtitle="Formules horaires transparentes et packs premium pour un besoin ponctuel ou complet."
       />
-      <div className="grid gap-6 md:grid-cols-2">
+
+      <div className="mb-10 grid gap-6 md:grid-cols-2">
         <PricingBox title="Tarifs horaires" items={pricing.hourlyRates} />
         <PricingBox title="Frais de déplacement" items={pricing.travelFees} />
+      </div>
+
+      <SectionTitle
+        title="Packs intervention & sécurité"
+        subtitle="Des offres tout-en-un pour gagner du temps, sécuriser votre matériel et avancer sereinement."
+      />
+      <div className="grid gap-6 lg:grid-cols-3">
+        {pricingPacks.map((pack, index) => (
+          <PricingPackCard
+            key={pack.name}
+            name={pack.name}
+            price={pack.price}
+            summary={pack.summary}
+            idealIf={pack.idealIf}
+            includes={pack.includes}
+            objective={pack.objective}
+            highlight={index === 1}
+            index={index}
+          />
+        ))}
       </div>
     </main>
   );

@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 :root {
-  color: #1e1e1e;
+  color: #0f172a;
   background-color: #ffffff;
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body {
   margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+* {
+  scroll-behavior: smooth;
 }

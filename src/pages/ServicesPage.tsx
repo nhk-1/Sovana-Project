@@ -13,11 +13,11 @@ export function ServicesPage() {
       />
       <SectionTitle
         title="Services de dépannage informatique à Beauvais et dans l’Oise"
-        subtitle="Chaque intervention est pensée pour être rapide, transparente et adaptée à votre niveau."
+        subtitle="Des services complets, illustrés et pensés pour les particuliers, seniors, débutants et indépendants locaux."
       />
-      <div className="grid gap-6 md:grid-cols-2">
-        {services.map((service) => (
-          <ServiceCard key={service.title} title={service.title} description={service.description} />
+      <div className="grid gap-6 lg:grid-cols-2">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} service={service} index={index} />
         ))}
       </div>
     </main>

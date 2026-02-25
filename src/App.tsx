@@ -10,7 +10,7 @@ import { StructuredData } from './seo/StructuredData';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-ink">
+    <div className="min-h-screen bg-white text-slate-800">
       <StructuredData />
       <Header />
       <Routes>

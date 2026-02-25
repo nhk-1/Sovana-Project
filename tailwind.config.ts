@@ -5,12 +5,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0E2A47',
-        sand: '#E9DCCB',
-        ink: '#1E1E1E',
+        primary: '#0B3A6E',
       },
       boxShadow: {
-        soft: '0 8px 30px rgba(14, 42, 71, 0.08)',
+        soft: '0 10px 30px rgba(10, 45, 84, 0.08)',
+      },
+      keyframes: {
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fade-up 650ms ease-out both',
       },
     },
   },
